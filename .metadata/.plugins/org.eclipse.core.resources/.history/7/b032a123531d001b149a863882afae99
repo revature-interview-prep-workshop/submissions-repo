@@ -1,0 +1,162 @@
+package com.revature.model;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+public class PLinkedList<T> implements List {
+	
+	private PLinkedListNode<T> first;
+	private PLinkedListNode<T> last;
+	private int size;
+	
+	public boolean add(Object arg0) {
+		if(arg0.getClass() != PLinkedListNode.class) {
+			throw new IllegalArgumentException("Objects added to PLinkedList must be PLinkedListNode objects");
+		}
+		else if(first == null) {
+			first = (PLinkedListNode<T>) arg0;
+			last = (PLinkedListNode<T>) arg0;
+			return true;
+		}
+		else {
+			PLinkedListNode<T> currentNode = first;
+			last.setNext((PLinkedListNode<T>) arg0);
+			last = last.getNext();
+			return true;
+		}
+	}
+
+	public void add(int arg0, Object arg1) {
+		// TODO Auto-generated method stub
+		if(arg1.getClass() != PLinkedListNode.class) {
+			throw new IllegalArgumentException("Objects added to PLinkedList must be PLinkedListNode objects");
+		}
+		if(arg0 < 0 || arg0 > size) {
+			throw new IndexOutOfBoundsException(""+arg0);
+		}
+		else if(size == 0) {
+			add(arg1);
+		}
+	}
+
+	public boolean addAll(Collection arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean addAll(int arg0, Collection arg1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean contains(Object arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean containsAll(Collection arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Object get(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int indexOf(Object arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public boolean isEmpty() {
+		return size == 0;
+	}
+
+	public Iterator iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int lastIndexOf(Object arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public ListIterator listIterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public ListIterator listIterator(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean remove(Object arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Object remove(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean removeAll(Collection arg0) {
+		first = null;
+		last = null;
+		return true;
+	}
+
+	public boolean retainAll(Collection arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Object set(int arg0, Object arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int size() {
+		return size;
+	}
+
+	public List subList(int arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object[] toArray() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object[] toArray(Object[] arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public String toString() {
+		String out = "PLinkedList[";
+		if(first != null) {
+			PLinkedListNode<T> currentNode = first;
+			while(currentNode != null) {
+				out += currentNode.getValue();
+				if(currentNode != last) {
+					out += ", ";
+				}
+				currentNode = currentNode.getNext();
+			}
+		}
+		return "PLinkedList[";
+	}
+
+}

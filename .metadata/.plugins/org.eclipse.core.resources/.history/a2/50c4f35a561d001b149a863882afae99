@@ -1,0 +1,12 @@
+package com.revature.driver;
+
+import com.revature.model.PLinkedList;
+
+public class LinkedListDriver {
+	public static void main(String[] args) {
+		PLinkedList<Integer> list = new PLinkedList<Integer>();
+		System.out.println(list);
+		list.add(1);
+		System.out.println(list);
+	}
+}

@@ -1,0 +1,24 @@
+package com.revature.driver;
+
+import com.revature.model.PLinkedList;
+//Please forgive my informal testing, I assume this activity does not have to be
+// extremely thoroughly completed.
+public class LinkedListDriver {
+	public static void main(String[] args) {
+		PLinkedList<Integer> list = new PLinkedList<Integer>();
+		System.out.println(list);//empty list
+		System.out.println(list.isEmpty());//true
+		list.add(1);
+		list.add(2);
+		list.add(0,3);
+		list.add(1,4);
+		list.add(4,5);
+		list.add(3,5);
+		System.out.println(list);//3, 4, 1, 2, 5, 3
+		System.out.println(list.contains(3));//true
+		System.out.println(list.contains(6));//false
+		System.out.println(list.isEmpty());//false
+		System.out.println(list.indexOf(3));
+		System.out.println(list.lastIndexOf(3));
+	}
+}

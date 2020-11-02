@@ -1,0 +1,35 @@
+package com.revature.driver;
+
+import com.revature.model.PLinkedList;
+//Please forgive my informal testing, I assume this activity does not have to be
+// extremely thoroughly completed.
+public class LinkedListDriver {
+	public static void main(String[] args) {
+		PLinkedList<Character> list = new PLinkedList<Character>();
+		
+		Character test1 = new Character('C');
+		Character test2 = new Character('C');
+		System.out.println(test1.equals(test2));
+		
+		System.out.println(list);//empty list
+		System.out.println(list.isEmpty());//true
+		list.add('A');
+		list.add('B');
+		list.add(0,'C');
+		list.add(1,'D');
+		list.add(4,'E');
+		list.add(5,'C');
+		System.out.println(list);//C, D, A, B, E, C
+		System.out.println(list.contains('C'));//true
+		System.out.println(list.contains('F'));//false
+		System.out.println(list.isEmpty());//false
+		System.out.println(list.indexOf('C'));//0
+		System.out.println(list.lastIndexOf('C'));//5
+		
+		list.remove(0);
+		System.out.println(list);//D,A,B,E,C
+		list.remove(new Character('C'));
+		System.out.println(list);//D,A,E,C
+		
+	}
+}
