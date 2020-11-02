@@ -1,0 +1,6 @@
+Below is an example of how to implement a LinkedList data structure in Java
+---------------------------------------------------------------------------
+
+import java.util.LinkedList;
+
+LinkedList<Any> myList = new LinkedList<>();
