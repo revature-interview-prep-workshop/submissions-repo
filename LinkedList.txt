@@ -1,0 +1,28 @@
+import java.util.*; 
+
+public class Driver {
+	public static void main(String args[]) {
+		LinkedList<String> newList = new LinkedList<String>();
+		
+		newList.add("Java");
+		newList.add("With");
+		newList.add("Attitude");
+		
+		System.out.println(newList);
+	
+		newList.addFirst("This");
+		newList.add(1,"is");
+		newList.add(2,"Halloween");
+
+		System.out.println(newList);
+
+		newList.remove("Halloween");
+		newList.set(newList.size()-1,"Automation");
+
+		System.out.println(newList);
+	}
+}
+
+
+
+
