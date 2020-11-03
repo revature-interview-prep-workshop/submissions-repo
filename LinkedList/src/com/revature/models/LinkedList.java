@@ -26,7 +26,20 @@ public class LinkedList<T> {
 		return n;
 	}
 	
-	public void insert(T value) {
+	public void addFirst(T value) {
+		if (length == 0) {
+			this.start = new Node<T>(value);
+			length++;
+			return;
+		}
+		
+		Node<T> n = new Node<T>(value);
+		n.setNext(this.start);
+		this.start = n;
+		length++;
+	}
+	
+	public void addLast(T value) {
 		if (length == 0) {
 			this.start = new Node<T>(value);
 			length++;
@@ -38,6 +51,48 @@ public class LinkedList<T> {
 		end.setNext(n);
 		end = n;
 		length++;
+	}
+	
+	public void add(T value, int i) {
+		if (i > length) {
+			System.out.println("Error: Overflow");
+			return;
+		}
+		
+		if(i == 0) {
+			addFirst(value);
+		}
+		
+		if(i == length) {
+			addLast(value);
+		}
+		
+		int temp = 0;
+		Node<T> left = start;
+		
+		while(temp < i - 1) {
+			left = left.getNext();
+			temp++;
+		}
+		
+		Node<T> right = left.getNext();
+		
+		Node<T> n = new Node<T>(value);
+		
+		left.setNext(n);
+		n.setNext(right);
+		length++;
+	}
+	
+	public boolean contains(T value) {
+		Node<T> n = start;
+		
+		for(int i = 0; i < length; i++) {
+			if (n.getValue().equals(value)) return true;
+			n = n.getNext();
+		}
+		
+		return false;
 	}
 	
 	public T remove() {
@@ -68,21 +123,12 @@ public class LinkedList<T> {
 	public static void main(String[] args) {
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		
-		System.out.println("Length: " + list.getLength());
 		
-		list.insert(5);
-		list.insert(3);
-		list.insert(1);
+		list.addLast(3);
+		list.addLast(1);
 		
-		System.out.println("Length: " + list.getLength());		
+		list.add(2, 1);
 		
-		System.out.println(list.remove());
-		System.out.println(list.remove());
-		
-		list.insert(1);
-		
-		System.out.println("Length: " + list.getLength());		
-		
-		System.out.println(list.remove());
+		System.out.println(list.contains(2));
 	}
 }
