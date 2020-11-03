@@ -2,7 +2,7 @@
 
 Day 1:\
 dsaa/src/main/java/com/dsaa/LinkedListImpl\
-dsaa/src/test/java/com/dsaa/LinkedListImpl\
+dsaa/src/test/java/com/dsaa/LinkedListImpl
 
 Day2:\
 dsaa/src/main/java/com/dsaa/LinkedList2Impl\
