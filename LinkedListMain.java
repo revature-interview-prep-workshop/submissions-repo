@@ -1,10 +1,10 @@
 class LinkedListMain {
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
-		sll.insertFirst(1);
-		sll.insertFirst(2);
-		sll.insertFirst(3);
-		sll.insertFirst(4);
+        sll.insertFirst(1);
+        sll.insertFirst(2);
+        sll.insertFirst(3);
+        sll.insertFirst(4);
         sll.printLinkedList();
         // 4 => 3 => 2 => 1 =>
         
