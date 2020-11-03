@@ -81,9 +81,9 @@ public class LinkedList<T> {
 	}
 	
 	//we need to use a node so we know what our current value links to next in the linked list
-	class Node {
-		T data;
-		Node next;
+	private class Node {
+		private T data;
+		private Node next;
 		Node (T t) {
 			data = t;
 			next = null;
