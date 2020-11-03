@@ -1,0 +1,46 @@
+
+class newStack {
+	StackNode root;
+
+	static class stackNode{
+		int data;
+		StackNode next;
+			
+		StackNode(int i) {
+			data = i;
+		}
+
+	}
+
+	public void stackPush(int data) {
+		Stacknode newNode = new StackNode(data);
+
+		if (root == null) {
+			root = newNode;
+		} else {
+			StackNode temp = root;
+			root = newNode;
+			newNode.next = temp;
+		}
+	}
+
+	public int stackPop() {
+		int popped = Integer.MIN_VALUE;
+		if (root == null) {
+			System.out.println("empty stack");
+		} else {
+			popped = root.data;
+			root = root.next;
+		}
+		return popped;
+	}
+
+	public int peek() {
+		if (root == null) {
+			System.out.println("empty stack");
+			return Integer.MIN_VALUE;
+		} else {
+			return root.data;
+		}
+	}
+}

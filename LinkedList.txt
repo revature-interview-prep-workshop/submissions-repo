@@ -1,28 +1,59 @@
-import java.util.*; 
+public class addList {
+	Node head;
 
-public class Driver {
-	public static void main(String[] args) {
-		LinkedList<String> newList = new LinkedList<String>();
+	class Node {
+
+		int data;
+		Node next;
+
+		Node(int d) {
+			data = d;
+			next = null;
+		}
+	}
+
+	void add(T t, int index) {
+		Node n = head;
+		while (n.next != null && index>1) {
+			n = n.next;
+			index-=1;
+		}
+		if (n.next == null && index >1) {
+			System.out.println("index is out of bounds");
+			break;
+		} else {
+		Node new_node = new Node(t);
+		new_node.next = n.next;
+		n.next = new_node;
+		}
+	}
+
+	void addFirst(T t) {
+		Node newNode = new Node(t);
+		newNode.next = head;
+		head = newNode;
+	}
+
+	void addLast(T t) {
+		Node n = head;
+		Node lastNode = new Node(t);
+		lastNode.next = null;
+
+		while (n.next != null) {
+			n=n.next;
+		}
+		n.next = lastNode;
+	}
+
+	boolean contains(T t) {
+		Node n = head;
+		while (n.next != null && n.data != t) {
+			n=n.next;
+		}
+		if (n.data == t) {
+			return true;
+		}
 		
-		newList.add("Java");
-		newList.add("With");
-		newList.add("Attitude");
-		
-		System.out.println(newList);
-	
-		newList.addFirst("This");
-		newList.add(1,"is");
-		newList.add(2,"Halloween");
-
-		System.out.println(newList);
-
-		newList.remove("Halloween");
-		newList.set(newList.size()-1,"Automation");
-
-		System.out.println(newList);
+		return false;
 	}
 }
-
-
-
-
