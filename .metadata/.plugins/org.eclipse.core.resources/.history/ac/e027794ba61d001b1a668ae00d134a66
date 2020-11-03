@@ -1,0 +1,15 @@
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		MyLinkedList linkedList = new MyLinkedList();
+		linkedList.insert(linkedList, 1);
+		linkedList.insert(linkedList, 2);
+		linkedList.insert(linkedList, 3);
+		linkedList.insert(linkedList, 4);
+		linkedList.insert(linkedList, 5);
+		
+	}
+
+}
