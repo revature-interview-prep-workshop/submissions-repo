@@ -1,0 +1,13 @@
+
+import org.junit.jupiter.api.Test;
+
+import com.revature.model.PStack;
+
+public class StackTest {
+	
+	@Test
+	public void testPushAndPop() {
+		PStack<Integer> ps = new PStack<Integer>();
+		
+	}
+}

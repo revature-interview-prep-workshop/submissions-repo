@@ -53,6 +53,15 @@ public class PLinkedList<T> implements List {
 			size++;
 		}
 	}
+	
+	public void addToFront(Object arg0) {
+		PLinkedListNode newNode = new PLinkedListNode(arg0);
+		PLinkedListNode temp = first;
+		first = newNode;
+		newNode.setNext(temp);
+		size++;
+		if(size == 1) last = first;
+	}
 
 	public boolean addAll(Collection arg0) {
 		// TODO Auto-generated method stub

@@ -50,6 +50,8 @@ public class LinkedListDriver {
 		System.out.println(list);//X, Y, I
 		list.set(2, new Character('Z'));
 		System.out.println(list);//X, Y, Z
+		list.addToFront('W');
+		System.out.println(list);//W, X, Y, Z
 		
 		list.clear();
 		System.out.println(list.isEmpty());//true

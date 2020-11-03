@@ -1,0 +1,14 @@
+package com.revature.model;
+
+public class PStack<T> {
+	PStackNode<T> top;
+	
+	public void push(T o) {
+		PStackNode<T> newNode = new PStackNode(o);
+		
+	}
+	
+	public T pop() {
+		return null;
+	}
+}
