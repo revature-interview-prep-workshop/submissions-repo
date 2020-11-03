@@ -6,7 +6,7 @@ import org.testng.annotations.Test
 
 class LinkedListImplTest {
 
-    val list = LinkedListImpl<Int>()
+    private val list = LinkedListImpl<Int>()
 
     @org.testng.annotations.BeforeMethod
     fun setUp() {
