@@ -1,0 +1,22 @@
+package com.revature.dataStructures.linkedListImpl;
+
+import java.util.LinkedList;
+
+public class LinkedListImpl {
+
+	public static void main(String[] args) {
+
+		LinkedList<String> list = new LinkedList<String>();
+		
+		list.add("This");
+		list.add("is");
+		list.add("a");
+		list.add("linked");
+		list.add("list");
+		
+		System.out.println("ORIGNAL LIST");
+		System.out.println(list.iterator());
+		
+	}
+
+}
