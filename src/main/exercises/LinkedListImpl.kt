@@ -1,10 +1,8 @@
-package linkedlist
-
 class LinkedListImpl<T>() {
-    var head:LinkedListNode<T>? = null
+    var head: DoubleNode<T>? = null
     var size = 0
 
-    constructor(init: LinkedListNode<T>): this() {
+    constructor(init: DoubleNode<T>): this() {
         this.head = init
         size++
     }
@@ -16,7 +14,7 @@ class LinkedListImpl<T>() {
         }
 
         // edge cases
-        val newNode = LinkedListNode<T>(element)
+        val newNode = DoubleNode<T>(element)
 
         // index 0
         if (index == 0) {

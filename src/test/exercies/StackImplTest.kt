@@ -1,5 +1,4 @@
-package stack
-
+import StackImpl
 import org.testng.annotations.AfterMethod
 import org.testng.annotations.BeforeMethod
 

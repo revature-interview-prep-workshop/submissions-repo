@@ -1,13 +1,9 @@
-package stack
-
-import linkedlist.LinkedListNode
-
 class StackImpl<T> {
-    var top: LinkedListNode<T>? = null
+    var top: DoubleNode<T>? = null
     var size = 0
 
     fun push(element: T) {
-        val newNode = LinkedListNode(element)
+        val newNode = DoubleNode(element)
         newNode.next = top
         top = newNode
         size++
