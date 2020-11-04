@@ -1,0 +1,44 @@
+class queueNode {
+	int current;
+	queueNode next;
+
+	public queueNode(key) {
+		this.current = key;
+		this.next = null;
+	}
+
+}
+
+class addQueue {
+	queueNode front, rear;
+
+	public addQueue() {
+		this.front = this.rear = null;
+	}
+
+	void addNode(int key) {
+		queueNode temp = new queueNode(key);
+
+		if (this.rear == null) {
+			this.front = this.rear = temp;
+			return;
+		}
+	}
+
+	void removeNode() {
+		if (this.front == null) {
+			return;
+		}
+		queueNode temp = this.front;
+		this.front = this.front.next;
+
+		if (this.front == null) {
+			this.rear = null;
+		}
+	}
+}
+
+
+
+
+
