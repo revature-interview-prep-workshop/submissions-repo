@@ -14,7 +14,7 @@ public class Stack {
         list.add(0, data);
     }
 
-    public Object pop()
+    public Object remove()
     {
         return list.remove(0);
     }
@@ -45,7 +45,7 @@ public class Stack {
         s.print();
 
         System.out.println(s.peek());
-        System.out.println(s.pop());
+        System.out.println(s.remove());
 
         s.print();
 
