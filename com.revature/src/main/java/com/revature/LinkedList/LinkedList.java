@@ -1,14 +1,27 @@
-//https://java2blog.com/implement-singly-linked-list-in-java/
+package com.revature.LinkedList;
+
 public class LinkedList {
 	private Node head;
 
-	public void add(int data){
-	if(this.head == null){	
+	public void add(int data, int index){
+		Node node = new Node();
+		int position = 0;
+		while(index < position - 1) {
+			head = head.next;
+			position++;
+		}
+		node.next = head.next;
+		head.next = node;
+	}
+	
+	public void addFirst(int data){
 		Node newNode = new Node();
 		newNode.data = data;
 		newNode.next = head;
 		head = newNode;
-	}else{
+	}
+
+	public void addLast(int data){
 		Node current = head;
 		while (current.next != null) {
 			current = current.next;
@@ -16,9 +29,21 @@ public class LinkedList {
 		Node newNode = new Node();
 		newNode.data = data;
 		current.next = newNode;
-		}
 	}
 
+
+	public boolean contains(int data) {
+		Node current = head;
+		boolean flag = false;
+		while (current.next != null) {
+			current = current.next;
+			if(current.data == data) {
+				flag = true;
+			}
+		}
+		return flag;
+	}
+	
 	public Node removeFirst() {
 		Node temp = head;
 		head = head.next;
@@ -32,27 +57,5 @@ public class LinkedList {
 			current = current.next;
 		}
 		System.out.println();
-	}
-
-    public static void main(String[] args){
-		LinkedList ls = new LinkedList();
-		Node node = new Node();
-		ls.add(12);
-		ls.add(15);
-		ls.add(9);
-		ls.add(23);
-		ls.printLinkedList();
-		ls.removeFirst();
-		System.out.println(" ");
-		ls.printLinkedList();
-    }
-}
-
-class Node {
-	public int data;
-	public Node next;
- 
-	public void displayNodeData() {
-		System.out.print("[ " + data +"|"+ next +" ] ->");
 	}
 }
