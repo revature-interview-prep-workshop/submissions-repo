@@ -1,45 +1,45 @@
+import java.util.ArrayDeque;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class MianClass {
 
     public static void main(String[] args) {
-        LinkedList<String> team = new LinkedList<>();
-        LinkedList<String> test = new LinkedList<>();
 
-        test.push("a");
-        test.push("v");
-        test.push("a");
-        test.push("J");
+     MyLinkedList<String> test1 = new MyLinkedList<>();
 
-        System.out.println(test.toString());
+     test1.insert("first");
+     test1.printList();
 
-        test.forEach(System.out::print);
-
-        System.out.println(" ");
-
-        System.out.println(test.peek());
-        test.forEach(System.out::print);
-
-        System.out.println(" ");
+//        System.out.println(2%5);
+//
+//
+//        int [] testArr = {1,2,3,4,5};
+//
+//        for (int i:ArrayTesting.rotleft(testArr,4)){
+//            System.out.print(i);
+//        }
 
 
-        team.add("member_1");
-        team.add("member_2");
+        Queue<String> qq = new ArrayDeque<>();
+        qq.add("a");
+        qq.add("b");
+        qq.add("c");
 
-        for(String member : team){
-            System.out.println(member);
+        System.out.println(qq.peek());
+        qq.remove();
+
+
+
+        for(String s:qq){
+            System.out.println("----"+s);
         }
 
-        team.addLast("member_3");
-        System.out.println(team.getLast());
-
-
-
-        team.clear();
-
-        System.out.println(team);
-
-
-
     }
-}
+    }
+
+
+
+
+
+
