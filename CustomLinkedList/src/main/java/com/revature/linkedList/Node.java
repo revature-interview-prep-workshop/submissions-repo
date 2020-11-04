@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.linkedList;
 
 public class Node<T> {
 

@@ -1,22 +1,9 @@
-package com.revature;
+package com.revature.linkedList;
 
 public class LinkedListImplementation<T> {
 
     private Node<T> head;
     private Node<T> tail;
-
-
-    public void insert (T data) {
-        Node<T> newNode = new Node<T>(data, null);
-
-        if (head == null) {
-            head = newNode;
-        } else {
-            tail.setNextNode(newNode);
-        }
-
-        tail = newNode;
-    }
 
     public T peek() {
         if (head != null) {
@@ -60,6 +47,42 @@ public class LinkedListImplementation<T> {
             currentNode = currentNode.getNextNode();
         }
         //false, data was not removed
+        return false;
+    }
+
+    public void add(T t, int index) {
+
+    }
+
+    public void addFirst(T data) {
+        Node<T> newNode = new Node<T>(data, null);
+        head.setNextNode(head);
+        head = newNode;
+
+
+    }
+
+    public void addLast (T data) {
+        Node<T> newNode = new Node<T>(data, null);
+
+        if (head == null) {
+            head = newNode;
+        } else {
+            tail.setNextNode(newNode);
+        }
+
+        tail = newNode;
+    }
+
+    public boolean contains(T t) {
+
+        Node<T> currentNode = this.head;
+
+        while (currentNode != null) {
+            if(currentNode.getData().equals(t)) {
+                return true;
+            }
+        }
         return false;
     }
 

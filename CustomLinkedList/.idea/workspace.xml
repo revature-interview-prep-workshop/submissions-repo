@@ -23,7 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="102a57cb-ce2f-4fe4-b6e6-03d8e28b23d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../extra/spring-websocket/src/main/java/dev/innov8/demo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../extra/spring-websocket/src/main/java/dev/innov8/demo/controller/TestControllerSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/stack/StackImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/LinkedListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/linkedList/LinkedListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/linkedList/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +44,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -55,6 +61,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
@@ -63,7 +70,7 @@
       <module name="CustomLinkedList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.revature.*" />
+          <option name="PATTERN" value="com.revature.linkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,10 +155,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604343379177">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604425720242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604343379177" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604425720242" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1604344583081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
