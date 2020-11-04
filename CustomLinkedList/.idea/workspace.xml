@@ -23,13 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="102a57cb-ce2f-4fe4-b6e6-03d8e28b23d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/stack/StackImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/stack/StackNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/LinkedListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/linkedList/LinkedListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/linkedList/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/linkedList/LinkedListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/linkedList/LinkedListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/stack/StackImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/stack/StackImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/LinkedListImplementation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/Node.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/revature/queue" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mia\Documents\GitHub\RevatureJavaRepos\submissions-repo\CustomLinkedList\src\main\java\com\revature\queue" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -155,26 +161,27 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604425720242">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604525871257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604425720242" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1604344583081">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604525871257" />
+    <state x="2464" y="296" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604501480727" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604526411676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604344583081" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1604344583080">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604526411676" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604526411676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604344583080" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1604344583080">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604526411676" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604526411676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604344583080" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1604344583080">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604526411676" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604526411676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604344583080" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604526411676" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604344583187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

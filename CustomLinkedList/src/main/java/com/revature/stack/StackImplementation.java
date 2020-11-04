@@ -1,48 +1,55 @@
 package com.revature.stack;
 
+import com.revature.linkedList.Node;
+
 public class StackImplementation<T> {
 
-    private StackImplementation previous;
-    private T data;
+    private StackNode<T> head;
 
     public  StackImplementation() {
 
     }
 
-    public StackImplementation(T data) {
-        this.data = data;
-    }
 
-    public StackImplementation(StackImplementation previous, T data) {
-        this.previous = previous;
-        this.data = data;
+    public StackImplementation(StackNode previous) {
+        this.head = previous;
     }
 
     public void push(T value) {
-
+        StackNode<T> newNode = new StackNode<T>(value);
+        StackNode<T> oldHead = head;
+        head = newNode;
+        head.setPrevious(oldHead);
+        System.out.println(newNode.getData() + " pushed into the stack");
     }
 
     public T pop() {
+        if (head != null) {
+            T data = head.getData();
+            head = head.getPrevious();
+            return data;
+        }
         return null;
+
     }
 
     public T peek(){
+        if (head != null) {
+            return head.getData();
+        }
         return null;
     }
 
-    public StackImplementation getPrevious() {
-        return previous;
+
+    public void printStack() {
+
+        StackNode<T> currentNode = this.head;
+
+        while (currentNode != null) {
+            System.out.println("Node contains: " + currentNode.getData());
+            currentNode = currentNode.getPrevious();
+        }
+
     }
 
-    public void setPrevious(StackImplementation previous) {
-        this.previous = previous;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
 }

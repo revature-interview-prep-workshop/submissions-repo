@@ -28,6 +28,9 @@ public class LinkedListImplementation<T> {
     }
 
     public boolean removeByKey(T dataValue) {
+        if (head.getData() == null) {
+            return false;
+        }
         if(head.getData() == dataValue) {
             if (head.getNextNode() == null) {
                 tail = null;
@@ -49,15 +52,19 @@ public class LinkedListImplementation<T> {
         //false, data was not removed
         return false;
     }
-
+    //TODO
     public void add(T t, int index) {
 
     }
 
     public void addFirst(T data) {
         Node<T> newNode = new Node<T>(data, null);
-        head.setNextNode(head);
-        head = newNode;
+        if (head == null) {
+            head = newNode;
+        } else {
+            head.setNextNode(head);
+            head = newNode;
+        }
 
 
     }
