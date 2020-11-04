@@ -49,25 +49,6 @@ public class MyLinkedList {
 			} 
 	}
 	
-	public static Node insertNodeAtPosition(Node head, int data, int position) {
-        Node temp = head;
-        Node nodeIN = new Node(data);
-        if (head == null){
-            return nodeIN;
-        }
-        if (position == 0){
-            nodeIN.next = head;
-            return nodeIN;
-        }
-        int i=0;
-        while (++i < position){
-            temp=temp.next;
-        }
-        nodeIN.next = temp.next;
-        temp.next = nodeIN;
-        return head;
-    }
-	
 	public static void printList(MyLinkedList list) {
 		Node current = list.head;
 		

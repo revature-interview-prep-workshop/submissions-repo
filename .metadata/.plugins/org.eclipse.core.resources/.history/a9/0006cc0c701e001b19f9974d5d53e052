@@ -12,11 +12,11 @@ public class Driver {
 		linkedList.addAtHead(9);
 		linkedList.addAtTail(12);
 		linkedList.addAtTail(0);
+		MyLinkedList.printList(linkedList);
 		linkedList.contains(9); 
 		linkedList.contains(2);
 		linkedList.contains(0);
-		MyLinkedList.insertNodeAtPosition(linkedList.head, 100, 3);
-		MyLinkedList.printList(linkedList);
+		
 	}
 
 }
