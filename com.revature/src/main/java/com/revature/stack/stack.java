@@ -3,9 +3,9 @@ package com.revature.stack;
 public class stack {
 	private int arr[];
 	private int size;
-	private index =0;
+	private int index =0;
 	
-	public Stack(int size) {
+	public void Stack(int size) {
         this.size = size;
         arr = new int[size];
     }
