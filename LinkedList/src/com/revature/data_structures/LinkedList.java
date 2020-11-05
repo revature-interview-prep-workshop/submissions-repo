@@ -59,5 +59,5 @@ public class LinkedList {
             current = current.next;
         }
     }
-    
+
 }
