@@ -13,9 +13,21 @@ public class LinkedListTests {
 	}
 	
 	@Test
-	public void testRemove() {
+	public void testRemoveFirst() {
 		fail("Not yet implemented");
 	}
 
-
+	@Test
+	public void testAddFirst() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void testAddLast() {
+		fail("Not yet implemented");
+	}
+	@Test
+	public void testContains() {
+		fail("Not yet implemented");
+	}
 }
