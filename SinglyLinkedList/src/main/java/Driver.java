@@ -1,4 +1,5 @@
 import org.example.objects.LinkedList;
+import org.example.objects.Queue;
 import org.example.objects.Stack;
 
 public class Driver {
@@ -39,5 +40,21 @@ public class Driver {
             System.out.println(temp_stack_head.nodeData);
             temp_stack_head = temp_stack_head.next;
         }
+
+
+        Queue<Integer> queue = new Queue<Integer>();
+
+        queue.offer(5);
+        queue.offer(10);
+        queue.offer(15);
+
+
+        System.out.println(queue.peek().nodeData);
+        System.out.println(queue.poll().nodeData);
+        System.out.println(queue.peek().nodeData);
+        System.out.println(queue.poll().nodeData);
+        System.out.println(queue.peek().nodeData);
+        System.out.println(queue.poll().nodeData);
+
     }
 }
