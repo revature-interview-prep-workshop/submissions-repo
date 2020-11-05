@@ -1,4 +1,4 @@
-package com.Revature;
+package com.Revature.examples;
 
 import java.util.LinkedList;
 
