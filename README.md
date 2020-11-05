@@ -13,3 +13,7 @@ dsaa/src/test/java/com/dsaa/StackImplTest
 Day3:\
 dsaa/src/main/java/com/dsaa/QueueImpl\
 dsaa/src/test/java/com/dsaa/QueueImplTest
+
+Day4:\
+dsaa/src/main/java/com/dsaa/sudoku/SudokuSolver\
+dsaa/src/test/java/com/dsaa/sudoku/SudokuSolverTest
