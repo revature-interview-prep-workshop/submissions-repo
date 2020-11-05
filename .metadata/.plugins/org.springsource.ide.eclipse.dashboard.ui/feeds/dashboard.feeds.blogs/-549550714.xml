@@ -5,7 +5,82 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-11-03T23:05:51Z</updated>
+  <updated>2020-11-04T12:12:50Z</updated>
+  <entry>
+    <title>Spring Security 5.5.0-M1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/11/04/spring-security-5-5-0-m1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Joe Grandja</name>
+    </author>
+    <id>tag:spring.io,2020-11-03:4252</id>
+    <updated>2020-11-04T12:12:50Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community, I’m pleased to announce the release of
+Spring Security 5.5.0-M1! You can find the complete details in the &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.5.0-M1"&gt;release notes&lt;/a&gt; and the highlights below:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="oauth-2-0"&gt;&lt;a class="anchor" href="#oauth-2-0"&gt;&lt;/a&gt;OAuth 2.0&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-5502-oauth2token-interface-for-abstractoauth2token"&gt;&lt;a class="anchor" href="#gh-5502-oauth2token-interface-for-abstractoauth2token"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/5502"&gt;gh-5502&lt;/a&gt; - OAuth2Token interface for AbstractOAuth2Token&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-9070-use-lobhandler-in-jdbcoauth2authorizedclientservice"&gt;&lt;a class="anchor" href="#gh-9070-use-lobhandler-in-jdbcoauth2authorizedclientservice"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/pull/9070"&gt;gh-9070&lt;/a&gt; - Use LobHandler in JdbcOAuth2AuthorizedClientService&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8765-provide-a-r2dbc-implementation-of-reactiveouath2authorizedclientservice"&gt;&lt;a class="anchor" href="#gh-8765-provide-a-r2dbc-implementation-of-reactiveouath2authorizedclientservice"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/pull/8765"&gt;gh-8765&lt;/a&gt; - Provide a R2dbc implementation of ReactiveOuath2AuthorizedClientService&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-7160-jwtdecoders-and-reactivejwtdecoders-should-determine-algorithm-from-jwk-set-endpoint"&gt;&lt;a class="anchor" href="#gh-7160-jwtdecoders-and-reactivejwtdecoders-should-determine-algorithm-from-jwk-set-endpoint"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/7160"&gt;gh-7160&lt;/a&gt; - JwtDecoders and ReactiveJwtDecoders should determine algorithm from JWK Set Endpoint&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="saml"&gt;&lt;a class="anchor" href="#saml"&gt;&lt;/a&gt;SAML&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-9177-saml-2-0-asserting-party-metadata-resolution-should-read-signingmethod-elements"&gt;&lt;a class="anchor" href="#gh-9177-saml-2-0-asserting-party-metadata-resolution-should-read-signingmethod-elements"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/9177"&gt;gh-9177&lt;/a&gt; - SAML 2.0 Asserting Party Metadata resolution should read SigningMethod elements&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-9131-opensamlauthenticationprovider-should-decrypt-attributes"&gt;&lt;a class="anchor" href="#gh-9131-opensamlauthenticationprovider-should-decrypt-attributes"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/9131"&gt;gh-9131&lt;/a&gt; - OpenSamlAuthenticationProvider should decrypt attributes&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-9028-file-based-configuration-for-asserting-party-metadata"&gt;&lt;a class="anchor" href="#gh-9028-file-based-configuration-for-asserting-party-metadata"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/9028"&gt;gh-9028&lt;/a&gt; - File-based Configuration for Asserting Party Metadata&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="testing"&gt;&lt;a class="anchor" href="#testing"&gt;&lt;/a&gt;Testing&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-9179-withsecuritycontexttestexecutionlistener-should-support-nested-classes"&gt;&lt;a class="anchor" href="#gh-9179-withsecuritycontexttestexecutionlistener-should-support-nested-classes"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/9179"&gt;gh-9179&lt;/a&gt; - WithSecurityContextTestExecutionListener Should Support Nested Classes&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="docs"&gt;&lt;a class="anchor" href="#docs"&gt;&lt;/a&gt;Docs&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-9178-add-webflux-documentation-for-multiple-filter-chains"&gt;&lt;a class="anchor" href="#gh-9178-add-webflux-documentation-for-multiple-filter-chains"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/9178"&gt;gh-9178&lt;/a&gt; - Add WebFlux Documentation for Multiple Filter Chains&lt;/h5&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
+&lt;a href="https://docs.spring.io/spring-security/site/docs/5.5.0-M1/reference/html5/"&gt;Reference&lt;/a&gt;
+| &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - November 3, 2020</title>
     <link rel="alternate" href="https://spring.io/blog/2020/11/03/this-week-in-spring-november-3-2020" />
@@ -917,19 +992,6 @@ Finally, we saw how we can easily switch &lt;code&gt;MessageGroupStore&lt;/code&
 &lt;p&gt;For a complete list of changes and upgrade instructions, please see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.4.0-M4-Release-Notes"&gt;Spring Boot 2.4 Release Notes&lt;/a&gt; on the wiki and the &lt;a href="http://docs.spring.io/spring-boot/docs/2.4.0-M4/reference/html/"&gt;updated reference documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you want to get started with 2.4 and try out the new features, you can bootstrap a new project on &lt;a href="https://start.spring.io"&gt;https://start.spring.io&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.4.0-M4/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: DataStax's Patrick McFadin on DataStax Astra, Cassandra, Cassandra data modeling patterns, and more</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/10/15/a-bootiful-podcast-datastax-s-patrick-mcfadin-on-datastax-astra-cassandra-cassandra-data-modeling-patterns-and-more" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-10-15:4233</id>
-    <updated>2020-10-15T20:21:55Z</updated>
-    <content type="html">&lt;iframe title="DataStax's Patrick McFadin on DataStax Astra, Cassandra, Cassandra data modeling patterns, and more" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/5wk64-ef7548?from=pb6admin&amp;download=1&amp;version=1&amp;auto=0&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Helvetica&amp;skin=1&amp;pfauth=&amp;btn-skin=107"&gt;&lt;/iframe&gt;
-&lt;p&gt;Hi, Spring fans! In this episode &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks about all the wonderful shows he&amp;rsquo;s been at, the epic new support for Kubernetes-ready native images in Spring Boot 2.3 and Spring Boot 2.4, and then he talks to DataStax&amp;rsquo;s own &lt;a href="http://twitter.com/PatrickMcFadin"&gt;Patrick McFadin (@PatrickMcFadin)&lt;/a&gt;, a legend in the JVM and Cassandra communities, and an all around amiable gent. &lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
