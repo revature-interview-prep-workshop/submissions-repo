@@ -1,0 +1,94 @@
+Bethel Poon && Jordan Tyus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+package codes;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Sudoku {
+
+	public boolean uniqueCheck(String[][] arr) {
+		
+		//read row & col and check for repetition
+		for (int i=0; i<arr.length;i++) {
+			Set<String> arrayRow = new HashSet<String>();
+			Set<String> arrayCol = new HashSet<String>();
+
+			for (int j=0; j<arr[i].length;j++) {	
+				if (!arr[i][j].equals(".") && !arrayRow.add(arr[i][j])) {
+					return false;			
+				}
+				if (!arr[j][i].equals(".") && !arrayCol.add(arr[j][i])) {
+					return false;
+				}
+			}
+		}
+		
+		gridCheck(arr);
+		
+		return true;
+	}
+	
+	public boolean gridCheck(String[][] arr) {
+		
+		//read 3x3 and check for repetition
+		for (int grid = 0;grid < 9;grid++) {
+			
+			Set<String> gridArray = new HashSet<String>();
+			for (int i = 0; i < 3;i++) {
+				for (int j = 0; j < 3;j++) {	
+					if (!arr[i][j].equals(".") && !gridArray.add(arr[i][j])) {
+						return false;
+					}
+				}
+			}
+		}
+		
+		return true;
+	}
+	
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+package codes;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class SudokuTest {
+	
+	@Test
+	public void uniqueCheckTrue() {
+		String [][] s = {{"5","3",".",".","7",".",".",".","."},
+                {"6",".",".","1","9","5",".",".","."},
+                {".","9","8",".",".",".",".","6","."},
+                {"8",".",".",".","6",".",".",".","3"},
+                {"4",".",".","8",".","3",".",".","1"},
+                {"7",".",".",".","2",".",".",".","6"},
+                {".","6",".",".",".",".","2","8","."},
+                {".",".",".","4","1","9",".",".","5"},
+                {".",".",".",".","8",".",".","7","9"}};
+		Sudoku puzzle = new Sudoku();
+		assertEquals(puzzle.uniqueCheck(s), true);
+	}
+	
+	@Test
+	public void uniqueCheckFalse() {
+		String [][] s2 = {{"8","3",".",".","7",".",".",".","."},
+                {"6",".",".","1","9","5",".",".","."},
+                {".","9","8",".",".",".",".","6","."},
+                {"8",".",".",".","6",".",".",".","3"},
+                {"4",".",".","8",".","3",".",".","1"},
+                {"7",".",".",".","2",".",".",".","6"},
+                {".","6",".",".",".",".","2","8","."},
+                {".",".",".","4","1","9",".",".","5"},
+                {".",".",".",".","8",".",".","7","9"}};
+		
+		Sudoku puzzle = new Sudoku();
+		assertEquals(puzzle.uniqueCheck(s2), false);
+	}
+	
+}
