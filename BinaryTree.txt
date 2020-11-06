@@ -1,0 +1,91 @@
+class bNode<T> {
+	public T data;
+	public bNode<T> left, right;
+
+	public Node ( T item, bNode<T> left, bNode<T> right) {
+		this.data = item;
+		this.left = left;
+		this.right = right;
+	}
+}
+
+~~~~~~~~~~~~~~~~~~~~
+
+class BiTree<T> {
+	bNode root;
+
+	BiTree( T key) {
+		root = new bNode(key);
+	}
+
+	BiTree() {
+		root = null;
+	}
+
+	void insertNode(bNode<T> key) {
+		root = insertRep(root, key);
+	}
+	
+	bNode insertRep(bNode root, T key) {
+		if (root ==null) {
+			root = new bNode(key);
+			return root;
+		}
+		
+		if (key < root.key) {
+			root.left = insertRep(root.left, key);
+		} else if (key > root.key) {
+			root.right = insertRep(root.right, key);
+		}
+		return root;
+	}
+
+	public boolean contains(bNode root, T obj) {
+		if (root != null) {
+			if (root.data == obj) {
+				return true;
+			}
+
+			boolean nL = contains(root.left, obj);
+			if (nL) {
+				return true;	
+			}
+			
+			boolean nR = contains(root.right, obj);
+			if (nR) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
+
+	bNode removeNode(bNode root, T obj) {
+		if (root != null) {
+			
+			boolean find = contains(root, obj);
+			if (find) {
+				if (root.left == null && root.right == null) {
+					return null;
+				}
+				
+				if () {
+
+				}
+
+				if () {
+
+				}
+			}
+		}
+		return root;
+	}
+}
+
+
+
+
+
+
+
+
