@@ -41,7 +41,7 @@ public class LinkedList {
         Link current = first;
         while(current.data != key) {
             if(current.next == null) {
-                System.out.println("The link was found");
+                System.out.println("The link was not found");
                 return null;
             }
             else {

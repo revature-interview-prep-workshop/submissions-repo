@@ -14,14 +14,15 @@ public class Driver {
         list.delete(2);
         list.displayList();
         Link link1 = list.find(5);
+        link1.displayLink();
         Link link2 = list.find(11);
         Link link3 = list.add(list.first, 777, 2);
-        list.displayList();
+//        list.displayList();
 
         Link link4 = new Link(999);
         list.addLast(link4);
-        list.displayList();
-        System.out.println(list.contains(link3));
+//        list.displayList();
+//        System.out.println(list.contains(link3));
 
     }
 }
