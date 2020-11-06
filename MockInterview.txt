@@ -1,0 +1,24 @@
+class javaClass {
+
+
+	public void reverseString(String s){
+		
+		Stack st = new Stack();
+		for(int i =0; i <  i.length; i){
+			st.push(s.charAt(i));
+		}
+
+		char[] arr = new char[s.lenght];
+		int j = 0;
+
+		while(!st.empty()){
+			arr[j] = st.pop();
+			j++;
+	}
+		arr.toString()???
+
+Stringbuilder str 
+str.append(st.pop())
+
+	}
+}

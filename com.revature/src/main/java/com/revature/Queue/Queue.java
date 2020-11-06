@@ -1,3 +1,5 @@
+package com.revature.Queue;
+
 class Queue 
 {
     private int arr[];         
@@ -49,7 +51,7 @@ class Queue
  
     public Boolean isFull()
     {
-        if(capacity() == 0){
+        if(capacity == 0){
             return true;
         } else {
             return false;
