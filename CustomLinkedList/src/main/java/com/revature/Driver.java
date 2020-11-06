@@ -2,9 +2,12 @@ package com.revature;
 
 import com.revature.binaryTree.BinaryTree;
 import com.revature.binaryTree.TreeNode;
+import com.revature.hashTable.HashTable;
 import com.revature.linkedList.LinkedListImplementation;
 import com.revature.queue.QueueImplementation;
 import com.revature.stack.StackImplementation;
+
+import java.util.HashMap;
 
 public class Driver {
 
@@ -70,5 +73,17 @@ public class Driver {
         System.out.println(tree.toString());
 
         System.out.println(tree.contains(tree.getRoot(), 4));
+
+
+        HashTable<String, Integer> map = new HashTable<>();
+        map.add("this",1 );
+        map.add("coder",2 );
+        map.add("this",4 );
+        map.add("hi",5 );
+        System.out.println(map.getSize());
+        System.out.println(map.remove("this"));
+        System.out.println(map.remove("this"));
+        System.out.println(map.getSize());
+        System.out.println(map.isEmpty());
     }
 }

@@ -23,12 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="102a57cb-ce2f-4fe4-b6e6-03d8e28b23d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/binaryTree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/binaryTree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/hashTable/HashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/hashTable/HashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/revature/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/binaryTree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/binaryTree/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/binaryTree/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/binaryTree/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/linkedList/LinkedListImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/linkedList/LinkedListImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/linkedList/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/linkedList/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/revature/queue/QueueImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/queue/QueueImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/queue/QueueNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/queue/QueueNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/stack/StackImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/stack/StackImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/stack/StackNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/stack/StackNode.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,31 +167,31 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2464" y="296" key="#com.intellij.ide.util.MemberChooser" timestamp="1604623962565">
+    <state x="2464" y="296" key="#com.intellij.ide.util.MemberChooser" timestamp="1604676719193">
       <screen x="1920" y="200" width="1366" height="728" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604525871257" />
-    <state x="2464" y="296" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604623962565" />
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1604624036342">
+    <state x="2464" y="296" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604676719193" />
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1604677308863">
       <screen x="1920" y="200" width="1366" height="728" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604526843403" />
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604624036342" />
-    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1604624036342">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604677308863" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1604677308863">
       <screen x="1920" y="200" width="1366" height="728" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604526843403" />
-    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604624036342" />
-    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1604624036342">
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604677308863" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1604677308863">
       <screen x="1920" y="200" width="1366" height="728" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604526843403" />
-    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604624036342" />
-    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1604624036342">
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604677308863" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1604677308863">
       <screen x="1920" y="200" width="1366" height="728" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.200.1366.728@0.0.1920.1040" timestamp="1604526843403" />
-    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604624036342" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1920.1040/1920.200.1366.728@1920.200.1366.728" timestamp="1604677308863" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604344583187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
