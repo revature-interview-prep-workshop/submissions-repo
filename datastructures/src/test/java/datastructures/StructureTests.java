@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import datastructures.strucures.HashTable;
 import datastructures.strucures.LinkedList;
 import datastructures.strucures.Queue;
 import datastructures.strucures.Stack;
@@ -16,6 +17,7 @@ public class StructureTests {
 	private Stack<Integer> stack = new Stack<>();
 	private Queue<Integer> queue = new Queue<>();
 	private Tree<Integer> tree = new Tree<>();
+	private HashTable<Integer, String> table = new HashTable<>();
 	
 	@BeforeEach
 	public void before() {
@@ -102,5 +104,24 @@ public class StructureTests {
 		System.out.println("Should return false if we try to remove non existent element");
 		tree.insertNode(new Integer[] {1,3,5,7,9,11,13});
 		Assertions.assertFalse(tree.removeNode(6));
+	}
+	
+	@Test
+	public void newTableShouldBeZeroSize() {
+		System.out.println("New Table should have ZERO size");
+		Assertions.assertEquals(0, table.size());
+	}
+	
+	@Test
+	public void newTableShouldNotContainAnyElements() {
+		System.out.println("A new table should also have no existing elements");
+		Assertions.assertNull(table.get(0));
+	}
+	
+	@Test
+	public void testTableInsertion() {
+		System.out.println("A value should be retrievable from a hash table");
+		table.add(1, "Test");
+		Assertions.assertEquals("Test", table.get(1));
 	}
 }
