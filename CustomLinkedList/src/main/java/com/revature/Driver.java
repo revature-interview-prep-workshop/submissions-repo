@@ -1,5 +1,7 @@
 package com.revature;
 
+import com.revature.binaryTree.BinaryTree;
+import com.revature.binaryTree.TreeNode;
 import com.revature.linkedList.LinkedListImplementation;
 import com.revature.queue.QueueImplementation;
 import com.revature.stack.StackImplementation;
@@ -49,11 +51,24 @@ public class Driver {
         System.out.println(queue.dequeue()
                 + " dequeued from queue\n");
 
-        System.out.println("Front item is "
-                + queue.getFront());
+//        System.out.println("Front item is "
+//                + queue.getFront());
+//
+//        System.out.println("Rear item is "
+//                + queue.getRear());
 
-        System.out.println("Rear item is "
-                + queue.getRear());
 
+        BinaryTree tree = new BinaryTree();
+
+        tree.setRoot(new TreeNode(1));
+
+        tree.insertNode(2);
+        tree.insertNode(3);
+
+        tree.insertNode(4);
+
+        System.out.println(tree.toString());
+
+        System.out.println(tree.contains(tree.getRoot(), 4));
     }
 }
