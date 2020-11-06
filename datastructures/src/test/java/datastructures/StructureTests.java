@@ -8,12 +8,14 @@ import org.junit.jupiter.api.Test;
 import datastructures.strucures.LinkedList;
 import datastructures.strucures.Queue;
 import datastructures.strucures.Stack;
+import datastructures.strucures.Tree;
 
 public class StructureTests {
 
 	private LinkedList<Integer> list = new LinkedList<>();
 	private Stack<Integer> stack = new Stack<>();
 	private Queue<Integer> queue = new Queue<>();
+	private Tree<Integer> tree = new Tree<>();
 	
 	@BeforeEach
 	public void before() {
@@ -79,5 +81,26 @@ public class StructureTests {
 		System.out.println("Queue Should have 3 when peeking at queue");
 		queue.enqueue(3);
 		Assertions.assertEquals(3, queue.peek());
+	}
+	
+	@Test
+	public void treeShouldHaveOne() {
+		System.out.println("Tree should contain 1");
+		tree.insertNode(new Integer[]{3,2,1});
+		Assertions.assertTrue(tree.contains(1));
+	}
+	
+	@Test
+	public void treeShouldBeAbleToRemoveOne() {
+		System.out.println("Should be able to remove 1 if it exists in tree");
+		tree.insertNode(new Integer[] {3,2,1});
+		Assertions.assertTrue(tree.removeNode(1));
+	}
+	
+	@Test
+	public void treeShouldReturnFalseOnNonExistentElement() {
+		System.out.println("Should return false if we try to remove non existent element");
+		tree.insertNode(new Integer[] {1,3,5,7,9,11,13});
+		Assertions.assertFalse(tree.removeNode(6));
 	}
 }
