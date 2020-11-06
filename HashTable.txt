@@ -1,0 +1,28 @@
+class hNode<K, D> {
+	K key;
+	D data;
+
+	hNode<K, D> next;
+
+	public hNode(K key, D data) {
+		this.key = key;
+		this.data = data;
+	}	
+}
+~~~~~~~~~~~~~~~~~~~~~~
+
+class Map<K, D> {
+	private ArrayList<HashNode<K, D>> nodeArray;   
+	private int numNodes;
+	private int size;
+
+	public Map() {
+		nodeArray = new ArrayList<>();
+		numNode = 7;
+		size = 0;
+
+		for (int i=0; i< numNodes;i++) {
+			numNodes.add(null);
+		}
+	}
+}
