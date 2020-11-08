@@ -1,0 +1,24 @@
+public static void main() {
+	LinkedList exampleList = new LinkedList();
+
+	exampleList.add("Metallica");
+	exampleList.add("ACDC");
+	exmapleList.add("Slayer");
+	exampleList.add("Iron Maden");
+
+	sysout(exampleList); //prints everything in the list
+	// keeps order of items added
+
+	exampleList.remove(); removes one item from the front of the list
+	exampleList.clear(); //empties the list
+
+	// there are lots of other methods on Linked Lists
+
+	Iterator iter = exampleList.iterator();
+	while(iter.hasNext()) {
+		if (iter.next() == "Slayer") {
+			sysout("Found Slayer!");
+		}
+	}
+
+}
