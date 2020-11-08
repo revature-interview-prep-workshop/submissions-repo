@@ -1,0 +1,135 @@
+public class BinaryTree {
+    private Node root;
+
+    public class Node {
+        int id;
+        int value;
+
+        public Node left;
+        public Node right;
+    
+    	public void toString() {
+            System.out.println("id: " + this.id + " value: " + this.value);
+    	}
+
+    	public boolean isEmpty() {
+       		return(this == null);
+    	}
+    }
+    
+    public BinaryTree() {
+        this.root = null;
+    }
+
+    public Node findNode(int id) {
+        
+        Node current = root;
+
+        while(current.id != id) {
+            if(id < current.id) {
+                current = current.left;
+            } else {
+                current = current.right;
+            }
+            if(current == null) return null;
+        }
+
+        return current;        
+    }
+
+    public void create(int id, int value) {
+        Node newNode = new Node();
+        newNode.id = id;
+        newNode.value = value;
+
+        if(root == null) {
+            root = newNode;
+        } else {
+            Node current = root;
+            Node parent;
+
+            while(true) {
+                parent = current;
+
+                if(id < current.id) {
+                    current = current.left;
+
+                    if(current == null) {
+                        parent.left = newNode;
+                        break;
+                    }
+                } else {
+                    current = current.right;
+                    if(current == null ) {
+                        parent.right = newNode;
+                        break;
+                    }
+                }
+            }
+        }  
+    }
+
+    public boolean contains(int id) {
+        Node current = root;
+        if(current == null) {
+            return false;
+        }
+        while(id != current.id) {
+            if(id < current.id) {
+                current = current.left;
+            } else {
+                current = current.right;
+            }
+            if(current == null) return false;
+        }
+
+        return (!current.isEmpty());
+    }
+
+    public boolean delete(int id) {
+        if(this.root == null) {
+            return false;
+        }
+
+        Node current = root;
+        Node parent = root;
+        boolean isLeft = true;
+
+        while(id != current.id) {
+            parent = current;
+            if(id < current.id) {
+                isLeft = true;
+                current = current.left;
+            } else {
+                isLeft = false;
+                current = current.rightChild;
+            }
+            if(current == null) return false;
+        }
+
+        if(current.left == null && current.right == null) {
+            if(current == root) {
+                root = null;
+            } else if(isLeft) {
+                parent.left = null;
+            } else {
+                parent.right = null;
+            }  
+        } else if(current.right == null) {
+            if(current == root) {
+                root = current.left;
+            } else if (isLeft) {
+                parent.left = current.left;
+            } else {
+                parent.right = current.left;
+            }
+        } else if(current.left == null ) {
+            if(current == root) {
+                root = current.right;
+            } else if(isLeft) {
+                parent.left = current.right;
+            } else {
+                parent.right = current.right;
+            }
+        } 
+}

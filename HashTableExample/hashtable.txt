@@ -1,0 +1,51 @@
+class HashTable {
+
+	private HashEntry[] datum = new HashEntry();
+
+	void update(String key, String value) {
+		int hash = getHash(key);
+		HashEntry hashEntry = new HashEntry(key, value);
+
+		if (datum[hash] == null) {
+			datum[hash] = hashEntry;
+		} else {
+			HashEntry temp = datum[hash];
+
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+
+			temp.next = hashEntry;
+		}
+	}
+
+	String locate(String key) {
+		int hash = getHash(key);
+		if (datum[hash] != null) {
+			HashEntry temp = datum[hash];
+
+			while (!temp.key.equals(key) && temp.next != null) {
+				temp = temp.next;
+			}
+
+			return temp.value;
+		}
+
+		return null;
+	}
+
+	class HashEntry {
+		String key;
+		String value;
+		HashEntry next;
+
+		public HashEntry(String key, String value) {
+			this.key = key;
+			this.value = value;
+			this.next = null;
+		}
+
+		public String toString() {
+			System.out.println("key: " + this.key + " value: " + value);			}	
+	}
+}

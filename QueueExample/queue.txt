@@ -1,0 +1,50 @@
+class Queue {
+    int array[];         
+    int lineLeader;     
+    int lastFollower;      
+    int capacity;       
+    int count;          
+    
+    Queue(int sizeOfQueue) {
+        array = new int[sizeOfQueue];
+        capacity = sizeOfQueue;
+        lineLeader = 0;
+        lastFollower = -1;
+        count = 0;
+    }
+ 
+    public void dequeue() {
+        if (!isEmpty()) {
+            lineLeader = (lineLeader + 1) % capacity;
+            count--;
+        }
+    }
+
+    public void enqueue(int value) {
+        if(!isFull()) {
+            lastFollower = (lastFollower + 1) % capacity;
+            array[lastFollower] = value;
+       	    count++;
+        }
+    }
+
+    public int queueSize() {
+        return count;
+    }
+ 
+    public boolean isEmpty() {
+        if(queueSize() == 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+ 
+    public boolean atCapacity() {
+        if(capacity == 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
