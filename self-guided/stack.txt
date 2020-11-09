@@ -1,0 +1,23 @@
+public static void main() {
+
+	// first in, last out
+	// last item added to the stack is the first one to be removed
+
+	Stack videoGames = new Stack();
+	
+	videoGames.add("Halo 3");
+	videoGames.add("Civilization VI");
+	videoGames.add("Among Us");
+	videoGames.add("World at War");
+	videoGames.add("Borderlands 3");
+
+	sysout(videoGames);
+
+	// will print games in the reverse order they are added
+
+	videoGames.pop() // removes the top item from the stack
+	
+	//lots of methods
+	// peak lets you see the top item without removing it
+
+}
